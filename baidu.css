@@ -1,0 +1,126 @@
+/*1.样式重设*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*3.整体布局*/
+html,body{
+    height: 100%;
+}
+
+/*2.字体设置*/
+body{
+    display: flex;          /*3.整体布局*/
+    flex-direction: column; /*3.整体布局*/
+    font-size: 12px;        /*2.字体设置*/
+    font-family: arial;     /*2.字体设置*/
+}
+
+/*4.导航样式*/
+.page-header{
+    /*内边距*/
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: right;
+    /*右对齐*/
+}
+
+.page-header nav a{
+    /*对导航栏的a标签进行样式重设*/
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 20px;
+    /*左外边距*/
+}
+
+/*5.更多信息*/
+.page-header nav a:last-child{
+    /*对最后一个元素单独进行设置*/
+    display: inline-block;/*行内快捷元素*/
+    width: 60px;
+    height: 23px;
+    background: #38f;/*背景色*/
+    color: #fff;
+    text-decoration: none;/*去除下划线*/
+    text-align: center;/*文字居中*/
+    line-height: 23px;/*行高*/
+}
+
+/*3.整体布局*/
+.page-mainer{
+    flex: 1;
+    text-align: center; /*6.主体内容居中对齐*/
+    margin-top: 100px;  /*6.向外边距，与头部隔开*/
+}
+
+/*7.主体图片*/
+.page-mainer .logo-container img{
+    /*对主题图片设置大小，下外边距，与表单隔开*/
+    width: 270px;
+    height: 129px;
+    margin-bottom: 22px;
+}
+
+/*8.主体表单*/
+.form-container form{
+    /*使用flex布局，让他居中显示*/
+    display: flex;
+    justify-content: center;
+}
+
+/*表单输入框*/
+.form-container .form-search{
+    /*设置宽高，边框，右边框不显示，元素周围的轮廓也不显示，设置可点提示光标*/
+    display: inline-block;
+    width: 539px;
+    height: 34px;
+    border: 1px solid #b6b6b6;
+    border-right: 0;
+    outline: none;
+    line-height: 34px;
+    padding-left: 10px;
+}
+
+/*表单按钮*/
+.form-container .submit-btn{
+    /*给按钮设置宽高，字体大小、颜色，边框，字符间距，不显示元素周围的轮廓，设置可点提示光标*/
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #3385ff;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-container .submit-btn:hover{
+    /*鼠标滑过的样式*/
+    opacity: 0.8;
+}
+
+/*9.脚部图片*/
+.page-footer{
+    /*设置居中对齐，下内边距50px*/
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page-footer .footer-info{
+    /*为footer-info设置边距和颜色*/
+    margin-top: 15px;
+    color: #999;
+}
+
+.page-footer .footer-info a{
+    /*为a标签设置外右边距，拉开距离*/
+    color: #999;
+    margin-right: 15px;
+}
+.page-footer .footer-info a:last-child{
+    /*a标签单独设置外右边距为0*/
+    margin-right: 0;
+}
